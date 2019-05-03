@@ -1,19 +1,52 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
 
-    <script>
-      // You can also require other files to run in this process
-      require('./renderer.js')
-    </script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="./node_modules/framework7/css/framework7.min.css">
+  <link rel="stylesheet" href="./a.css">
+</head>
+
+<body>
+  <h1>Calculator</h1>
+
+  <div id="calculator" class="calculator">
+
+    <button id="clear" class="clear">C</button>
+
+    <div id="viewer" class="viewer">0</div>
+
+    <button class="num" data-num="7">7</button>
+    <button class="num" data-num="8">8</button>
+    <button class="num" data-num="9">9</button>
+    <button data-ops="plus" class="ops">+</button>
+
+    <button class="num" data-num="4">4</button>
+    <button class="num" data-num="5">5</button>
+    <button class="num" data-num="6">6</button>
+    <button data-ops="minus" class="ops">-</button>
+
+    <button class="num" data-num="1">1</button>
+    <button class="num" data-num="2">2</button>
+    <button class="num" data-num="3">3</button>
+    <button data-ops="times" class="ops">*</button>
+
+    <button class="num" data-num="0">0</button>
+    <button class="num" data-num=".">.</button>
+    <button id="equals" class="equals" data-result="">=</button>
+    <button data-ops="divided by" class="ops">/</button>
+  </div>
+
+  <button id="reset" class="reset">Reset Universe?</button>
+  <script type="text/javascript" src="./node_modules/framework7/js/framework7.min.js"></script>
+  <script type="text/javascript" src="./cal.js"></script>
+
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
+
+</body>
+
 </html>
