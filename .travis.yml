@@ -15,4 +15,11 @@ script:
   - node --version
   - npm --version
   - npm install
-  - npm run e2e
+cache:
+  directories:
+    - node_modules
+
+notifications:
+  email:
+    on_success: never
+    on_failure: change
