@@ -11,3 +11,4 @@ npm install
 ```
 npm start
 ```
+![picture](./img/ss.png)
