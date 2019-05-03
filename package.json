@@ -1,0 +1,22 @@
+{
+  "name": "electron-pr",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "Lmadushan",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^5.0.0"
+  }
+}
